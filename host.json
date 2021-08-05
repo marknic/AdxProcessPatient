@@ -1,0 +1,21 @@
+{
+    "version": "2.0",
+    "logging": {
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": true
+            }
+        },
+        "logLevel": {
+          "default": "Information",
+          "AdxProcessPatient.EventHubTrigger1": "Debug"
+        }
+    },
+    "healthMonitor": {
+      "enabled": true,
+        "healthCheckInterval": "00:00:10",
+        "healthCheckWindow": "00:02:00",
+        "healthCheckThreshold": 6,
+        "counterThreshold": 0.80
+    }
+}
